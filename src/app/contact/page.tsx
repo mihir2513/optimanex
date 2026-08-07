@@ -62,11 +62,11 @@ export default function ContactPage() {
       <section className="py-24 bg-white relative z-20 -mt-8">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="bg-white rounded-3xl shadow-elevated border border-border overflow-hidden grid grid-cols-1 lg:grid-cols-5">
-            
+
             {/* Contact Info (Left) */}
             <div className="bg-secondary text-white p-10 md:p-12 lg:col-span-2 relative overflow-hidden flex flex-col justify-between">
               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
-              
+
               <div className="relative z-10">
                 <h2 className="text-2xl font-montserrat font-bold mb-4">Get in Touch</h2>
                 <p className="text-white/80 mb-10 leading-relaxed">
@@ -81,15 +81,15 @@ export default function ContactPage() {
                       <a href="mailto:sales@optimanex.com" className="text-white/80 hover:text-white transition-colors">sales@optimanex.com</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-lg">Phone</h4>
-                      <a href="tel:+918141004777" className="text-white/80 hover:text-white transition-colors">+91 81410 04777</a>
+                      <a href="tel:+918141004777" className="text-white/80 hover:text-white transition-colors">+91 97255 58828</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       <p className="text-white/80">E 610, PNTC Tower, Ahmedabad, Gujarat, India</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
             <div className="p-10 md:p-12 lg:col-span-3">
               <h2 className="text-2xl font-montserrat font-bold text-foreground mb-2">Free Consultation</h2>
               <p className="text-muted-foreground mb-8">Book a free 30-minute consultation to discuss your project requirements and get expert advice.</p>
-              
+
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

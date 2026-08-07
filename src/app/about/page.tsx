@@ -18,13 +18,12 @@ const coreValues = [
 ];
 
 const expertise = [
-  "Full-Stack Development", "Mobile App Development", "Cloud & DevOps",
-  "UI/UX Design", "Data Engineering", "AI/ML Development",
-  "Quality Assurance", "Project Management"
+  "Full-Stack Development", "Mobile App Development", "n8N Automation",
+  "UI/UX Design", "Project Management"
 ];
 
 const whatWeDo = [
-  "Full-cycle Product Development", "Cloud Architecture & Migration",
+  "Full-cycle Product Development",
   "AI & Machine Learning Integration", "Mobile App Development (iOS & Android)",
   "Data Engineering & Analytics", "UI/UX Design & Prototyping",
   "DevOps & CI/CD Automation", "API Design & Microservices",
@@ -94,14 +93,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
               <h2 className="text-3xl lg:text-4xl font-montserrat font-bold text-foreground mb-6">
-                A Software Studio Built on 12 Years of Craft
+                A Software Studio Built on 4+ Years of Craft
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
                 <p>
                   Optimanex is a full-service software development company based in Ahmedabad, India. Established in 2013, the firm has spent over a decade assisting organizations across four continents convert intricate concepts into dependable, scalable software products.
                 </p>
                 <p>
-                  The team comprises 50+ engineers, designers, and product specialists with domain expertise across 11 industry sectors, using modern stacks (React, Node.js, Spring Boot, Python, AWS) alongside AI-enhanced development to deliver real business value.
+                  The team comprises 5+ engineers, designers, and product specialists with domain expertise across 11 industry sectors, using modern stacks (Flutter, React Native, UI/UX, Ai Image Genration, React, Node.js, n8N, Python) alongside AI-enhanced development to deliver real business value.
                 </p>
               </div>
             </FadeIn>
@@ -177,7 +176,7 @@ export default function AboutPage() {
 
       <CTASection
         title="Ready to build something great?"
-        subtitle="Join 28+ businesses that trust Optimanex to deliver software that lasts. Let's start with a free 30-minute consultation."
+        subtitle="Join 15+ businesses that trust Optimanex to deliver software that lasts. Let's start with a free 30-minute consultation."
         buttonText="Book a Free Consultation"
         buttonHref="/contact"
       />

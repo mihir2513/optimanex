@@ -19,12 +19,12 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Column 1: Brand & Contact */}
           <div>
             <FooterLogo />
             <p className="text-sm text-secondary-foreground/80 mb-6 leading-relaxed">
-              Engineering scalable, AI-powered software solutions for global businesses across Healthcare, FinTech, SaaS, and more — for over 12 years.
+              Engineering scalable, AI-powered software solutions for global businesses across Healthcare, FinTech, SaaS, and more — for over 4+ years.
             </p>
             <div className="space-y-3 text-sm text-secondary-foreground/80">
               <div className="flex items-start gap-3">
@@ -33,11 +33,19 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+918141004777" className="hover:text-white transition-colors">+91 81410 04777</a>
+                <a href="tel:+919725558828" className="hover:text-white transition-colors">+91 97255 58828</a>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <a href="tel:+918141004777" className="hover:text-white transition-colors">+49 15565429613</a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>E 610, PNTC Tower, Ahmedabad, Gujarat, India</span>
+                <span>TF-110 SHREE SIDDHESHWAR THE BUSINESS HARBOUR NR. GURUKUL CHAR RASTA, DABHOI RING ROAD, N.H. 8, Waghodia, Vadodara, Gujarat 390025</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-primary shrink-0" />
+                <span>Hans sommer str 25 , Braunschweig, 38106 Germany</span>
               </div>
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary shrink-0" />
@@ -50,11 +58,11 @@ export default function Footer() {
           <div>
             <h4 className="font-montserrat font-bold text-white mb-6 uppercase tracking-wider text-sm">Services</h4>
             <ul className="space-y-3 text-sm text-secondary-foreground/80">
-              <li><Link href="/services/digital-product-engineering" className="hover:text-white hover:pl-2 transition-all">Digital Product Engineering</Link></li>
-              <li><Link href="/services/cloud-devops-engineering" className="hover:text-white hover:pl-2 transition-all">Cloud & DevOps</Link></li>
-              <li><Link href="/services/data-engineering" className="hover:text-white hover:pl-2 transition-all">Data Engineering</Link></li>
-              <li><Link href="/services/ai-ml-development" className="hover:text-white hover:pl-2 transition-all">AI/ML Development</Link></li>
               <li><Link href="/services/mobile-app-development" className="hover:text-white hover:pl-2 transition-all">Mobile App Development</Link></li>
+              <li><Link href="/services/mobile-app-development" className="hover:text-white hover:pl-2 transition-all">Web Development</Link></li>
+              <li><Link href="/services/cloud-devops-engineering" className="hover:text-white hover:pl-2 transition-all">Cloud & DevOps</Link></li>
+              <li><Link href="/services/data-engineering" className="hover:text-white hover:pl-2 transition-all">Ai Image Genration</Link></li>
+              <li><Link href="/services/ai-ml-development" className="hover:text-white hover:pl-2 transition-all">AI/ML Development</Link></li>
               <li><Link href="/services/ui-ux-design" className="hover:text-white hover:pl-2 transition-all">UI/UX Design</Link></li>
             </ul>
           </div>
@@ -67,10 +75,10 @@ export default function Footer() {
               <li><Link href="/industries/fintech" className="hover:text-white hover:pl-2 transition-all">FinTech</Link></li>
               <li><Link href="/industries/real-estate" className="hover:text-white hover:pl-2 transition-all">Real Estate</Link></li>
               <li><Link href="/industries/saas" className="hover:text-white hover:pl-2 transition-all">SaaS & Enterprise</Link></li>
-              <li><Link href="/industries/oil-gas" className="hover:text-white hover:pl-2 transition-all">Oil & Gas</Link></li>
-              <li><Link href="/industries/tourism" className="hover:text-white hover:pl-2 transition-all">Tourism</Link></li>
-              <li><Link href="/industries/telecom" className="hover:text-white hover:pl-2 transition-all">Telecom</Link></li>
-              <li><Link href="/industries/logistics" className="hover:text-white hover:pl-2 transition-all">Logistics</Link></li>
+              {/* <li><Link href="/industries/oil-gas" className="hover:text-white hover:pl-2 transition-all">UI/UX</Link></li> */}
+              {/* <li><Link href="/industries/tourism" className="hover:text-white hover:pl-2 transition-all">Tourism</Link></li> */}
+              {/* <li><Link href="/industries/telecom" className="hover:text-white hover:pl-2 transition-all">Telecom</Link></li> */}
+              {/* <li><Link href="/industries/logistics" className="hover:text-white hover:pl-2 transition-all">Logistics</Link></li> */}
             </ul>
           </div>
 
