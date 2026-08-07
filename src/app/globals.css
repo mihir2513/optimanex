@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 220 47% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 47% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 47% 14%;
+    --primary: 211 100% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 47% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 15% 46%;
+    --accent: 196 100% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 211 100% 39%;
+    --coral: 3 84% 63%;
+    --radius: 0.75rem;
+
+    --gradient-blue: linear-gradient(135deg, hsl(211 100% 39%), hsl(196 100% 47%));
+    --gradient-navy: linear-gradient(135deg, hsl(220 47% 20%), hsl(220 60% 30%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 47% 14%) 0%, hsl(220 55% 22%) 50%, hsl(3 84% 63% / 0.8) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 97%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(220 47% 20% / .08);
+    --shadow-card: 0 8px 30px -8px hsl(220 47% 20% / .12);
+    --shadow-elevated: 0 20px 50px -12px hsl(220 47% 20% / .15);
+    --shadow-primary: 0 8px 30px -8px hsl(211 100% 39% / .3);
+  }
+
+  .dark {
+    --background: 220 47% 14%;
+    --foreground: 0 0% 100%;
+    --card: 220 47% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 47% 14%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 211 100% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 47% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 47% 20%;
+    --muted-foreground: 220 15% 70%;
+    --accent: 196 100% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 47% 30%;
+    --input: 220 47% 30%;
+    --ring: 211 100% 39%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
   }
 }
