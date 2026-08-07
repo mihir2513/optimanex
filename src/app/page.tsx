@@ -6,6 +6,7 @@ import { ServiceCard } from "@/components/ui/ServiceCard";
 import { IndustryCard } from "@/components/ui/IndustryCard";
 import { FeatureCard } from "@/components/ui/FeatureCard";
 import { CTASection } from "@/components/sections/CTASection";
+import { PortfolioSection } from "@/components/sections/PortfolioSection";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { FloatingStats } from "@/components/ui/FloatingStats";
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
@@ -128,6 +129,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Section */}
+      <PortfolioSection />
 
       {/* Industries Section */}
       <section className="py-24 bg-muted/30">
