@@ -28,13 +28,13 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-20 pb-16 bg-[linear-gradient(110deg,#1c2b4c_0%,#363057_70%,#d84950_100%)] overflow-hidden">
-        
+
         {/* Decorative Wave Overlay Placeholder */}
         <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: "url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1440 600%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath fill=%22none%22 stroke=%22rgba(255,255,255,0.2)%22 stroke-width=%222%22 d=%22M0,300 C320,100 420,500 720,300 C1020,100 1120,500 1440,300%22/%3E%3Cpath fill=%22none%22 stroke=%22rgba(255,255,255,0.1)%22 stroke-width=%221%22 d=%22M0,350 C300,150 450,450 750,350 C1050,250 1150,550 1440,350%22/%3E%3C/svg%3E')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        
+
         {/* Noise overlay */}
         <div className="absolute inset-0 opacity-[0.25] mix-blend-overlay pointer-events-none" style={{ backgroundImage: "url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" }}></div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
             <FadeIn>
@@ -69,18 +69,21 @@ export default function Home() {
               <FloatingStats />
             </FadeIn>
             <FadeIn direction="left" className="order-1 lg:order-2 space-y-6">
-              <SectionHeading 
-                eyebrow="ABOUT US" 
+              <SectionHeading
+                eyebrow="ABOUT US"
                 title={
                   <>Your Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#00adef]">Technology Partner</span></>
                 }
               />
               <div className="text-muted-foreground text-lg leading-relaxed space-y-6">
                 <p>
-                  Based in Ahmedabad, India, Optimanex has been delivering end-to-end software solutions for over 12 years. We specialise in building scalable, robust applications across <strong className="text-foreground">Healthcare, FinTech, Real Estate, SaaS & Enterprise, Tourism, Telecom, Oil & Gas,</strong> and <strong className="text-foreground">Logistics</strong> domains.
+                  For over 4 years, Optimanex has been Ahmedabad's go-to technology partner — turning ideas into powerful digital products. From <strong className="text-foreground">Application Development and UI/UX Design to Website Design & Development, Graphic Design, and AI Image Generation,</strong> and <strong className="text-foreground">Logistics, Healthcare, FinTech, SaaS</strong> domains.
                 </p>
                 <p>
-                  Our team combines deep domain expertise with cutting-edge technology — including AI-augmented development — to deliver solutions that drive real business value for clients across the US, Canada, Australia, Africa, and Europe.
+                  Beyond services, we build products. Meet Mover — our own Transport & Fleet Management solution, engineered to give businesses real-time visibility, smarter routing, and complete control over their fleet operations.
+                </p>
+                <p>
+                  With clients across the US, Canada, Australia, Africa, and Europe, we combine deep domain knowledge with AI-augmented development to deliver work that doesn't just look good — it performs.
                 </p>
               </div>
               <div className="pt-6">
@@ -99,9 +102,9 @@ export default function Home() {
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-4">
           <FadeIn>
-            <SectionHeading 
-              eyebrow="WHAT WE OFFER" 
-              title="End-to-End Software Engineering Services" 
+            <SectionHeading
+              eyebrow="WHAT WE OFFER"
+              title="End-to-End Software Engineering Services"
               subtitle="From concept to deployment — comprehensive technology solutions tailored to your business needs."
               centered
               className="mb-16"
@@ -109,8 +112,8 @@ export default function Home() {
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, idx) => (
-              <FadeIn 
-                key={service.slug} 
+              <FadeIn
+                key={service.slug}
                 delay={idx * 0.1}
                 className={cn(
                   "h-full",
@@ -130,9 +133,9 @@ export default function Home() {
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <FadeIn className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-            <SectionHeading 
-              eyebrow="INDUSTRIES WE SERVE" 
-              title="Domain-Specific Expertise Across Verticals" 
+            <SectionHeading
+              eyebrow="INDUSTRIES WE SERVE"
+              title="Domain-Specific Expertise Across Verticals"
             />
             <Button asChild variant="link" className="text-primary font-bold hidden md:inline-flex shrink-0">
               <Link href="/industries">View All Industries <ArrowRight className="w-4 h-4 ml-1" /></Link>
@@ -157,9 +160,9 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn>
-            <SectionHeading 
-              eyebrow="WHY CHOOSE US" 
-              title="Why Optimanex?" 
+            <SectionHeading
+              eyebrow="WHY CHOOSE US"
+              title="Why Optimanex?"
               subtitle="Six reasons why 28+ clients trust us to build their most critical software."
               centered
               className="mb-16"
@@ -186,7 +189,7 @@ export default function Home() {
                   Tech Stack
                 </div>
                 <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6 leading-tight">
-                  Technologies We <br/>
+                  Technologies We <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#00adef]">Master</span>
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -212,8 +215,8 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <CTASection 
-        title="Ready to Start Your Project?" 
+      <CTASection
+        title="Ready to Start Your Project?"
         subtitle="Let's discuss how we can bring your vision to life — from idea to production."
         buttonText="Book a Call"
         buttonHref="/contact"

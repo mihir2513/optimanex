@@ -14,7 +14,7 @@ export function CTASection({ title, subtitle, buttonText, buttonHref }: CTASecti
     <section className="py-20 relative overflow-hidden bg-secondary">
       {/* Background Gradient & Pattern */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
         <h2 className="text-3xl md:text-5xl font-montserrat font-bold text-white mb-6">
           {title}

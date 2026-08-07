@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
           <Link href="/" className="text-sm font-semibold hover:text-primary transition-colors">Home</Link>
-          
+
           <div className="relative group">
             <Link href="/services" className="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors py-8">
               Services <ChevronDown className="w-4 h-4" />
@@ -107,7 +107,7 @@ export default function Navbar() {
       <div className={cn("fixed inset-0 bg-white z-40 transition-transform duration-300 lg:hidden overflow-y-auto pt-24 pb-8 px-4", mobileMenuOpen ? "translate-x-0" : "translate-x-full")}>
         <div className="flex flex-col gap-6 text-foreground">
           <Link href="/" className="text-xl font-bold">Home</Link>
-          
+
           <div className="flex flex-col gap-2">
             <button onClick={() => setServicesOpen(!servicesOpen)} className="flex items-center justify-between text-xl font-bold w-full text-left">
               Services <ChevronDown className={cn("w-5 h-5 transition-transform", servicesOpen && "rotate-180")} />
@@ -139,7 +139,7 @@ export default function Navbar() {
           <Link href="/about" className="text-xl font-bold">About</Link>
           <Link href="/career" className="text-xl font-bold">Career</Link>
           <Link href="/contact" className="text-xl font-bold">Contact</Link>
-          
+
           <div className="pt-6 mt-6 border-t border-border">
             <Button asChild className="w-full rounded-full shadow-primary" size="lg">
               <Link href="/contact">Get a Free Quote <ArrowRight className="w-4 h-4 ml-2" /></Link>

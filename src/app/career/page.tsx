@@ -114,9 +114,9 @@ export default function CareerPage() {
       <section className="py-24 bg-white border-b border-border">
         <div className="container mx-auto px-4">
           <FadeIn>
-            <SectionHeading 
-              eyebrow="WHY JOIN US" 
-              title="A Place Where You'll Thrive" 
+            <SectionHeading
+              eyebrow="WHY JOIN US"
+              title="A Place Where You'll Thrive"
               subtitle="We invest in our people because great software is built by great teams."
               centered
               className="mb-16"
@@ -133,7 +133,7 @@ export default function CareerPage() {
       </section>
 
       {/* Open Roles */}
-      <section id="open-roles" className="py-24 bg-muted/30 scroll-mt-20">
+      {/* <section id="open-roles" className="py-24 bg-muted/30 scroll-mt-20">
         <div className="container mx-auto px-4 max-w-5xl">
           <FadeIn>
             <SectionHeading 
@@ -178,7 +178,7 @@ export default function CareerPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Application Form */}
       <section id="apply-now" className="py-24 bg-white scroll-mt-20">
@@ -279,8 +279,8 @@ export default function CareerPage() {
                     <FormItem>
                       <FormLabel>Resume/CV (PDF/DOC/DOCX, max 5MB) *</FormLabel>
                       <FormControl>
-                        <Input 
-                          type="file" 
+                        <Input
+                          type="file"
                           accept=".pdf,.doc,.docx"
                           onChange={(e) => onChange(e.target.files)}
                           {...field}

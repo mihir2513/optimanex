@@ -18,17 +18,17 @@ const coreValues = [
 ];
 
 const expertise = [
-  "Full-Stack Development", "Mobile App Development", "Cloud & DevOps", 
-  "UI/UX Design", "Data Engineering", "AI/ML Development", 
+  "Full-Stack Development", "Mobile App Development", "Cloud & DevOps",
+  "UI/UX Design", "Data Engineering", "AI/ML Development",
   "Quality Assurance", "Project Management"
 ];
 
 const whatWeDo = [
-  "Full-cycle Product Development", "Cloud Architecture & Migration", 
-  "AI & Machine Learning Integration", "Mobile App Development (iOS & Android)", 
-  "Data Engineering & Analytics", "UI/UX Design & Prototyping", 
-  "DevOps & CI/CD Automation", "API Design & Microservices", 
-  "HIPAA & GDPR Compliance", "Ongoing Maintenance & Support", 
+  "Full-cycle Product Development", "Cloud Architecture & Migration",
+  "AI & Machine Learning Integration", "Mobile App Development (iOS & Android)",
+  "Data Engineering & Analytics", "UI/UX Design & Prototyping",
+  "DevOps & CI/CD Automation", "API Design & Microservices",
+  // "HIPAA & GDPR Compliance", "Ongoing Maintenance & Support", 
   "Legacy System Modernization", "Team Augmentation"
 ];
 
@@ -65,11 +65,26 @@ export default function AboutPage() {
 
       <section className="py-12 bg-white border-b border-border -mt-8 relative z-20">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <StatCounter value={10} suffix="+" label="Years of Experience" />
-            <StatCounter value={23} suffix="+" label="Happy Clients" />
-            <StatCounter value={29} suffix="+" label="Projects Delivered" />
-            <StatCounter value={9} label="Industry Verticals" />
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20">
+            <StatCounter
+              value={4}
+              suffix="+"
+              label="Years of Experience"
+            />
+
+            <StatCounter
+              value={8}
+              suffix="+"
+              label="Happy Clients"
+            />
+
+            <StatCounter
+              value={15}
+              suffix="+"
+              label="Projects Delivered"
+            />
+
+            {/* <StatCounter value={9} label="Industry Verticals" /> */}
           </div>
         </div>
       </section>
@@ -128,9 +143,9 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn>
-            <SectionHeading 
-              eyebrow="CORE VALUES" 
-              title="What Drives Us" 
+            <SectionHeading
+              eyebrow="CORE VALUES"
+              title="What Drives Us"
               centered
               className="mb-16"
             />
@@ -160,7 +175,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTASection 
+      <CTASection
         title="Ready to build something great?"
         subtitle="Join 28+ businesses that trust Optimanex to deliver software that lasts. Let's start with a free 30-minute consultation."
         buttonText="Book a Free Consultation"

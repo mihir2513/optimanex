@@ -88,6 +88,39 @@ export default function IndustryDetail({ params }: { params: { slug: string } })
         </div>
       </section>
 
+      {/* Our Approach */}
+      <section className="py-24 bg-muted/30 border-y border-border">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <FadeIn>
+            <SectionHeading
+              eyebrow="PROCESS"
+              title="Our Approach"
+              centered
+              className="mb-16"
+            />
+            
+            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+              {(industry.approachSteps || [
+                { title: "Discovery", description: "Requirement gathering and business analysis." },
+                { title: "Architecture", description: "System design and technology selection." },
+                { title: "Agile Development", description: "Iterative sprints with regular demos." },
+                { title: "QA & Testing", description: "Automated and manual testing for quality assurance." },
+                { title: "Deployment", description: "CI/CD automated release to production." },
+                { title: "Ongoing Support", description: "Monitoring, maintenance, and future enhancements." }
+              ]).map((step, idx) => (
+                <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                  <div className="flex items-center justify-center w-6 h-6 rounded-full border-4 border-white bg-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
+                  <div className="w-[calc(100%-2.5rem)] md:w-[calc(50%-1.5rem)] bg-white p-4 rounded-xl shadow-sm border border-border/50">
+                    <h4 className="font-bold text-foreground mb-1 font-montserrat text-sm">{step.title}</h4>
+                    <p className="text-muted-foreground text-xs">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <CTASection 
         title={`Ready to build in ${industry.name}?`}
         subtitle="Let's discuss your project. Our team brings hands-on domain experience to every engagement."

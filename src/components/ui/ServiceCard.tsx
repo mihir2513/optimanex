@@ -25,7 +25,7 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
   };
 
   return (
-    <Link 
+    <Link
       href={`/services/${service.slug}`}
       onMouseMove={handleMouseMove}
       className={cn(
@@ -39,27 +39,40 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
           background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 173, 239, 0.1), transparent 40%)`,
         }}
       />
-      
+
       {/* Hover accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-blue opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      
+
       <div className="relative z-10 flex flex-col h-full">
         {index !== undefined && (
           <span className="text-primary font-bold text-sm bg-primary/10 px-4 py-1.5 rounded-full mb-8 w-fit inline-block border border-primary/10">
             {String(index + 1).padStart(2, '0')}
           </span>
         )}
-        
+
         <h3 className="text-2xl md:text-3xl font-bold font-montserrat text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
           {service.name}
         </h3>
-        
+
         <p className="text-muted-foreground text-base mb-8 line-clamp-3 md:line-clamp-4 flex-grow">
           {service.subheading}
         </p>
-        
+
+        {/* Image */}
+        {
+          index === 0 && <>
+            <div className="mb-6 overflow-hidden rounded-xl">
+              <img
+                src="/mover2.png"
+                alt={service.name}
+                className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </>
+        }
+
         <div className="flex items-center text-primary font-bold text-base mt-auto">
-          Explore Service 
+          Explore Service
           <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
         </div>
       </div>
