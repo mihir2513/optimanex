@@ -16,25 +16,25 @@ export interface PortfolioItem {
 
 export const portfolioData: PortfolioItem[] = [
   {
-    slug: "modern-ecommerce-platform",
-    title: "E-Commerce & Retail Platform",
+    slug: "goecoware",
+    title: "GoEcoware - Sustainable Eco-Products",
     category: "Web Development",
     tag: "Web",
-    thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    client: "RetailBrand Inc.",
-    timeline: "3 Months",
-    description: "A high-performance eCommerce platform built for scale, featuring real-time inventory synchronization, dynamic pricing, and a seamless checkout experience.",
-    challenge: "The client was struggling with a legacy monolithic architecture that caused slow page load times and frequent crashes during high-traffic holiday sales events.",
-    solution: "We migrated their entire storefront to a modern headless commerce architecture using Next.js and a microservices backend. We implemented optimized caching strategies and an edge network for global low latency.",
+    thumbnail: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    client: "GoEcoware",
+    timeline: "2 Months",
+    description: "A custom e-commerce and brand platform built for GoEcoware, offering high-quality sustainable and eco-friendly products with a seamless shopping experience.",
+    challenge: "The client needed an environmentally conscious brand identity paired with a high-performance, conversion-optimized storefront that effectively tells their sustainability story.",
+    solution: "We designed and developed a bespoke web platform featuring an elegant, nature-inspired UI, smooth animations, and a highly optimized e-commerce checkout flow.",
     results: [
-      "400% improvement in page load speeds",
-      "35% increase in mobile conversion rates",
-      "Zero downtime during peak Black Friday sales"
+      "Beautiful, responsive, and eco-centric design",
+      "Fast page load speeds improving SEO and user retention",
+      "Seamless and secure checkout experience"
     ],
-    techStack: ["Next.js", "Node.js", "PostgreSQL", "AWS", "Stripe API"],
+    techStack: ["WordPress", "Elementor", "WooCommerce", "PHP", "Custom CSS"],
     gallery: [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80"
     ]
   },
   {
@@ -60,47 +60,47 @@ export const portfolioData: PortfolioItem[] = [
     ]
   },
   {
-    slug: "fintech-mobile-banking",
-    title: "FinTech Mobile Banking",
+    slug: "schoolconomy",
+    title: "Schoolconomy - Educational Finance App",
     category: "Application",
     tag: "App",
-    thumbnail: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
-    client: "FinServe Bank",
-    timeline: "6 Months",
-    description: "A secure and intuitive mobile banking application allowing users to manage accounts, transfer funds, and track their financial health effortlessly.",
-    challenge: "The bank needed to attract younger demographics by offering a modern, frictionless digital banking experience without compromising strict financial security compliance.",
-    solution: "Developed a cross-platform mobile application using Flutter, heavily prioritizing UX/UI. We implemented biometric authentication, end-to-end encryption, and a modern micro-interactions system.",
+    thumbnail: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80",
+    client: "Schoolconomy",
+    timeline: "4 Months",
+    description: "An innovative educational app designed to teach students financial literacy, managing points, rewards, and school-based economies in a gamified environment.",
+    challenge: "Schools lacked an engaging, digital way to teach students real-world financial skills and manage classroom reward systems without relying on physical tokens or complex spreadsheets.",
+    solution: "We built a cross-platform mobile application that allows teachers to award virtual currency, and students to track their earnings, savings, and spend them in a customized school store.",
     results: [
-      "Achieved 4.8 star rating on App Store and Google Play",
-      "Over 100,000 downloads in the first month",
-      "Voted best UX in digital banking 2023"
+      "Successfully launched on Google Play Store",
+      "Highly engaging gamified financial learning",
+      "Streamlined classroom reward management for teachers"
     ],
-    techStack: ["Flutter", "Dart", "Firebase", "Node.js", "Bank APIs"],
+    techStack: ["Flutter", "Dart", "Firebase", "Node.js", "REST APIs"],
     gallery: [
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1556740714-a8395b3bf30f?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80"
     ]
   },
   {
-    slug: "healthcare-tracking-app",
-    title: "Healthcare Tracking App",
+    slug: "mover-fleet-management",
+    title: "Mover - Fleet Management",
     category: "Application",
     tag: "App",
-    thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-    client: "MediCare Plus",
-    timeline: "5 Months",
-    description: "A patient-centric health monitoring app that integrates with wearables to track vitals and enables direct telemedicine consultations.",
-    challenge: "Patients found it difficult to consistently track their health metrics and share them securely with their physicians between physical visits.",
-    solution: "Built a robust mobile app that syncs automatically with Apple Health and Google Fit. We added a secure messaging and video call layer for HIPAA-compliant doctor consultations.",
+    thumbnail: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=80",
+    client: "Optimanex (Internal Product)",
+    timeline: "Ongoing",
+    description: "Mover is our proprietary Transport & Fleet Management solution, engineered to give businesses real-time visibility, smarter routing, and complete control over their fleet operations.",
+    challenge: "Modern fleet operators struggle with fragmented systems, leading to inefficient routing, high fuel costs, and poor visibility into driver behavior and vehicle maintenance.",
+    solution: "We built Mover as a comprehensive, scalable platform featuring real-time GPS tracking, automated intelligent dispatching, predictive maintenance alerts, and a dedicated driver mobile app.",
     results: [
-      "Increased patient engagement by 60%",
-      "Reduced unnecessary clinic visits by 30%",
-      "Successfully processed 50,000+ telemedicine sessions"
+      "Real-time tracking with sub-second latency",
+      "Optimized routing saving up to 20% in fuel costs",
+      "Seamless management of end-to-end fleet operations"
     ],
-    techStack: ["React Native", "WebRTC", "HealthKit", "AWS HIPAA", "GraphQL"],
+    techStack: ["React Native", "Node.js", "MongoDB", "Google Maps API", "WebSockets"],
     gallery: [
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1586191582046-6014e4eb1525?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80"
     ]
   },
   {
@@ -145,6 +145,28 @@ export const portfolioData: PortfolioItem[] = [
     gallery: [
       "https://images.unsplash.com/photo-1600607687920-4e2a09be1587?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18efc2069?auto=format&fit=crop&w=1200&q=80"
+    ]
+  },
+  {
+    slug: "badi-bahen-finance",
+    title: "Badi Bahen - Finance App",
+    category: "Application",
+    tag: "App",
+    thumbnail: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
+    client: "Badi Bahen",
+    timeline: "5 Months",
+    description: "A secure and intuitive financial empowerment app designed to provide micro-lending, financial guidance, and support, acting as a trusted 'Big Sister' for users' financial health.",
+    challenge: "The client needed to build a trustworthy and accessible platform for digital lending and financial advice that felt approachable to users who might be intimidated by traditional banking apps.",
+    solution: "We developed a cross-platform mobile application with a highly intuitive, vernacular-first UI/UX. We integrated robust automated KYC workflows, secure payment gateways, and a simplified loan management system.",
+    results: [
+      "Secure and scalable micro-lending infrastructure",
+      "Seamless and automated user onboarding (e-KYC)",
+      "High user retention driven by a friendly UX"
+    ],
+    techStack: ["Flutter", "Node.js", "MongoDB", "Razorpay", "e-KYC APIs"],
+    gallery: [
+      "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80"
     ]
   }
 ];
